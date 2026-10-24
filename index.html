@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Blog educativo sobre alteraciones cardiorrespiratorias, corazón, pulmones y fisioterapia.">
+  <title>Ciencia Cardiorrespiratoria | Aprende y comprende</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"><span>CIENCIA · SALUD · FISIOTERAPIA</span><span>Conocimiento que impulsa el bienestar</span></div>
+  <header class="hero">
+    <nav class="nav"><a class="brand" href="#inicio"><span class="brand-mark">＋</span><span>CIENCIA <b>CARDIORRESPIRATORIA</b></span></a><a class="nav-link" href="#temas">Explorar temas ↓</a></nav>
+    <div class="hero-content" id="inicio"><div class="eyebrow"><span></span> TU ESPACIO DE APRENDIZAJE EN SALUD</div>
+      <h1>Comprende el cuerpo.<br><em>Transforma el cuidado.</em></h1>
+      <p>Un espacio educativo para descubrir cómo funcionan el corazón y los pulmones, conocer sus alteraciones y acercarte a la ciencia de la rehabilitación.</p>
+      <a class="cta" href="#temas">Explorar biblioteca <span>↗</span></a>
+      <div class="hero-stats"><div><strong>01</strong><span>Cardiovascular</span></div><div><strong>02</strong><span>Respiratorio</span></div><div><strong>+</strong><span>Aprendizaje continuo</span></div></div>
+    </div>
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="heart-art" aria-hidden="true">♡<span>+</span></div>
+  </header>
+  <main>
+    <section class="intro" id="temas"><div><div class="section-kicker">BIBLIOTECA EDUCATIVA / 01</div><h2>Explora los temas<br><em>a tu propio ritmo.</em></h2></div><p>Busca una condición o selecciona una categoría. Cada ficha presenta información introductoria para apoyar el estudio y la comprensión.</p></section>
+    <section class="library">
+      <div class="search-wrap"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Buscar: hipertensión, asma, neumonía…" aria-label="Buscar temas"><button id="clearSearch" class="clear-btn" type="button" aria-label="Limpiar búsqueda">×</button></div>
+      <div class="filters" role="group" aria-label="Filtrar por categoría"><button class="filter active" data-category="Todos">Todos los temas <span id="totalCount">20</span></button><button class="filter" data-category="Cardiovascular">♥ Cardiovascular</button><button class="filter" data-category="Respiratorio">◉ Respiratorio</button><button class="filter" data-category="General">✚ General</button></div>
+      <div class="results-line"><span id="resultsCount">20 fichas disponibles</span><span>SELECCIONA UNA FICHA PARA LEER</span></div>
+      <div id="articlesGrid" class="articles-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden><div>⌕</div><h3>No encontramos esa ficha</h3><p>Prueba con otra palabra, por ejemplo “asma”, “corazón” o “neumonía”.</p><button id="resetSearch" class="cta small" type="button">Ver todos los temas ↗</button></div>
+    </section>
+    <section class="note"><div class="note-symbol">i</div><div><h3>Aprender también es cuidar</h3><p>Este blog tiene fines educativos y no sustituye la evaluación, el diagnóstico ni las indicaciones de profesionales de la salud.</p></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">＋</span><span>CIENCIA <b>CARDIORRESPIRATORIA</b></span></a><span>Un proyecto educativo para aprender sobre salud.</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <div class="modal" id="articleModal" aria-hidden="true"><div class="modal-backdrop" data-close="true"></div><article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="closeModal" aria-label="Cerrar ficha">×</button><div class="modal-kicker" id="modalCategory">FICHA EDUCATIVA</div><h2 id="modalTitle"></h2><p class="modal-summary" id="modalSummary"></p><div class="modal-body" id="modalBody"></div><div class="modal-footer">Contenido introductorio · Consulta fuentes clínicas actualizadas para profundizar.</div></article></div>
+  <script src="script.js"></script>
+</body></html>
